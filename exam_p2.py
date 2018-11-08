@@ -201,17 +201,30 @@ def decrypt_joke():
 
 ### DO NOT MODIFY THIS FUNCTION ###
 def main():
-    # Example test case (PlainText)
-    plaintext = PlainText('hello', 2)
-    print('Expected Output: jgnnq')
-    print('Actual Output:', plaintext.get_encrypted_text())
+    # load_wordlist('words.txt')
 
-    # Example test case (CipherText)
-    ciphertext = CipherText('jgnnq')
-    print('Expected Output:', (24, 'hello'))
-    print('Actual Output:', ciphertext.decrypt_text())
 
-    print(decrypt_joke())
+
+    # print(is_a_valid_word(load_wordlist('words.txt'), 'a'))
+    # print(is_a_valid_word(load_wordlist('words.txt'), 'pig'))
+    # print(is_a_valid_word(load_wordlist('words.txt'), 'pigpsh'))
+    # print(is_a_valid_word(load_wordlist(WORDLIST_FILENAME), 'a'))
+
+    #print(get_joke_string())
+
+    
+
+    # # Example test case (PlainText)
+    # plaintext = PlainText('hello', 2)
+    # print('Expected Output: jgnnq')
+    # print('Actual Output:', plaintext.get_encrypted_text())
+
+    # # Example test case (CipherText)
+    # ciphertext = CipherText('jgnnq')
+    # print('Expected Output:', (24, 'hello'))
+    # print('Actual Output:', ciphertext.decrypt_text())
+
+    # print(decrypt_joke())
 
 if __name__ == '__main__':
     main()
