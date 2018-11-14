@@ -39,7 +39,7 @@ WORDLIST_FILENAME = 'words.txt'
 class Text(object):
 
     ### DO NOT MODIFY THIS METHOD ###
-    def __init__(self, text):
+    def __init__(self, text): # defaults
         '''
         Initializes a Text object
         '''
@@ -74,8 +74,16 @@ class Text(object):
         Example: an_instance_of_Text.create_moved_dict(2) would generate
         {'a': 'c', 'b': 'd', 'c':'e', ...}  
         '''
-        pass  # delete this line and replace with your code here
+        d = {}
+        keys = self
+        values = move
+        for i in keys:
+            for x in values:
+                d[i] = x + 1
+        print(d)
 
+        for letter in self:
+            letter
 
     ### YOU NEED TO MODIFY THIS METHOD ###
     def apply_move(self, move):
@@ -201,7 +209,8 @@ def decrypt_joke():
 
 ### DO NOT MODIFY THIS FUNCTION ###
 def main():
-    # load_wordlist('words.txt')
+    (load_wordlist('words.txt'))
+    # print(load_wordlist('words.txt'))
 
 
 
@@ -210,7 +219,7 @@ def main():
     # print(is_a_valid_word(load_wordlist('words.txt'), 'pigpsh'))
     # print(is_a_valid_word(load_wordlist(WORDLIST_FILENAME), 'a'))
 
-    #print(get_joke_string())
+    # print(get_joke_string())
 
     
 
